@@ -1,36 +1,16 @@
 {
   "cars": [
-    {
-      "year": 2003,
-      "make": "Toyota",
-      "model": "Corolla",
-      "miles": 93121,
-      "price": 4595,
-      "img": "toyota/corolla/2003_silver_0.jpg"
-    },
-    {
-      "year": 2013,
-      "make": "Chevrolet",
-      "model": "Malibu",
-      "miles": 31063,
-      "price": 9950,
-      "img": "chevrolet/malibu/2013_red_0.jpg"
-    },
-    {
-      "year": 2013,
-      "make": "Honda",
-      "model": "Accord",
-      "miles": 31063,
-      "price": 9950,
-      "img": "honda/accord/2013_white_0.jpg"
-    },
-    {
-      "year": 2015,
-      "make": "Lincoln",
-      "model": "MKZ",
-      "miles": 31063,
-      "price": 9950,
-      "img": "lincoln/mkz/2015_sliver_0.jpg"
-    }
+    {"year":2003,"make":"Toyota","model":"Corolla","miles":93121,"price":4595,"img":"img/cars/toyota/corolla/2003_silver_0.jpg"},
+    {"year":2013,"make":"Chevrolet","model":"Malibu","miles":31063,"price":9950,"img":"img/cars/chevrolet/malibu/2013_red_0.jpg"},
+    {"year":2013,"make":"Honda","model":"Accord","miles":31063,"price":9950,"img":"img/cars/honda/accord/2013_white_0.jpg"},
+    {"year":2015,"make":"Lincoln","model":"MKZ","miles":31063,"price":9950,"img":"img/cars/lincoln/mkz/2015_sliver_0.jpg"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"},
+    {"year":1998,"make":"Honda","model":"Civic","miles":211872,"price":1230,"img":"https://via.placeholder.com/200"}
   ]
 }
