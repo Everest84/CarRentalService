@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Current Rentals - Thundercats Car Rental Service</title>
+
+    <link rel="stylesheet" href="../css/site.css" />
+    <link href="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
+
+    <script src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <main class="app">
+        <header class="app-head">
+            <nav class="navbar">
+                <ul class="navbar-menu start">
+                    <li><a href="../">Thundercats Car Rental Service</a></li>
+                </ul>
+                <ul class="navbar-menu end">
+                    <li><a href="../add-rental/">Add Rental</a></li>
+                    <li><a href="./">Current Rentals</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="app-body">
+            <section class="app-section">
+                <h1>Current Rentals</h1>
+                <h4>Search for all vehicles currently rented out to customers</h4>
+            </section>
+            <section class="app-section">
+                <table id="cars" class="table">
+                    <thead>
+                    <tr>
+                        <th>Rental ID</th>
+                        <th>Vehicle</th>
+                        <th>Customer Name</th>
+                        <th>Rented On</th>
+                        <th>Return By</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>97131</td>
+                        <td>2018 Red Toyota Corolla</td>
+                        <td>Morty Smith</td>
+                        <td>04/12/2019</td>
+                        <td>04/15/2019</td>
+                    </tr>
+                    <tr>
+                        <td>34122</td>
+                        <td>2019 Blue Honda CR-V</td>
+                        <td>Crash Bandicoot</td>
+                        <td>04/07/2019</td>
+                        <td>04/11/2019</td>
+                    </tr>
+                    <tr>
+                        <td>63878</td>
+                        <td>2019 Black BMW 3-Series</td>
+                        <td>Leeroy Jenkins</td>
+                        <td>04/09/2019</td>
+                        <td>04/15/2019</td>
+                    </tr>
+                    <tr>
+                        <td>11749</td>
+                        <td>2019 Purple Ford Mustang</td>
+                        <td>Tommy Wiseau</td>
+                        <td>04/10/2019</td>
+                        <td>04/12/2019</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <footer class="app-foot">
+
+        </footer>
+    </main>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var dataTable = new DataTable("#cars");
+        });
+    </script>
+</body>
+</html>
