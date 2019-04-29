@@ -3,36 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thundercats Car Rental Service</title>
+    <title>Thundercats Car Rentals</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" integrity="sha256-8B1OaG0zT7uYA572S2xOxWACq9NXYPQ+U5kHPV1bJN4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/site.css" />
 </head>
-<body>
-    <main class="app">
-        <header class="app-head">
-            <nav class="navbar">
-                <ul class="navbar-menu start">
-                    <li><a href="./">Thundercats Car Rental Service</a></li>
-                </ul>
-                <ul class="navbar-menu end">
-                    <li><a href="./add-rental/">Add Rental</a></li>
-                    <li><a href="./current-rentals/">Current Rentals</a></li>
-                </ul>
-            </nav>
-        </header>
-        <article class="app-body">
-            <section class="app-section">
-                <h1>Thundercats Receptionist Portal</h1>
-                <h4>Please choose an option below</h4>
-            </section>
-            <section class="app-section">
-                <a href="./add-rental/" class="button">Add Rental</a>
-                <a href="./current-rentals/" class="button">View Current Rentals</a>
-            </section>
-        </article>
-        <footer class="app-foot">
-
-        </footer>
-    </main>
+<body class="has-navbar-fixed-top">
+<main class="App">
+    <header class="App-head">
+        <nav class="navbar is-danger is-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="./index.html">
+                        Thundercats
+                    </a>
+                    <a class="navbar-burger burger" aria-label="main navigation" aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start"></div>
+                    <div class="navbar-end">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <div class="navbar-link">
+                                receptionist1
+                            </div>
+                            <div class="navbar-dropdown is-right">
+                                <a class="navbar-item">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-size-1">Thundercats Car Rentals</h1>
+                    <h3 class="subtitle is-size-3">Receptionist Portal</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article class="App-body">
+        <div class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="content">
+                        <h3>Please select an option below:</h3>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <a href="./confirm-pickup.html" class="box is-hoverable">
+                                    <div class="box-body">
+                                        <h4>
+                                            <span class="icon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                            Confirm Pickup
+                                        </h4>
+                                        <p>
+                                            Confirm a reserved rental.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="column is-6">
+                                <a href="./walk-in.html" class="box is-hoverable">
+                                    <div class="box-body">
+                                        <h4>
+                                            <span class="icon">
+                                                <i class="fa fa-user"></i>
+                                            </span>
+                                            Walk-In
+                                        </h4>
+                                        <p>
+                                            Book an available rental.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="App-foot footer">
+        <div class="content has-text-centered">
+            <p class="is-size-7">
+                &copy; 2019 Thundercats Car Rentals
+                <br/>
+                All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</main>
 </body>
 </html>

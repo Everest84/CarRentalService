@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thundercats Car Rentals</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" integrity="sha256-8B1OaG0zT7uYA572S2xOxWACq9NXYPQ+U5kHPV1bJN4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body class="has-navbar-fixed-top">
+<main class="App">
+    <header class="App-head">
+        <nav class="navbar is-danger is-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="./index.html">
+                        Thundercats
+                    </a>
+                    <a class="navbar-burger burger" aria-label="main navigation" aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <div class="navbar-link">
+                                receptionst1
+                            </div>
+                            <div class="navbar-dropdown is-right">
+                                <a class="navbar-item">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero is-light">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-size-1">Confirm Pickup</h1>
+                    <h3 class="subtitle is-size-3">Confirm a reserved rental.</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article class="App-body">
+        <div class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="content">
+                        <form id="customer-reservation-form">
+                            <h4>Please enter the customer's reservation ID.</h4>
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Reservation ID" />
+                                </div>
+                                <div class="control">
+                                    <button class="button" type="button"
+                                            onclick="document.getElementById('customer-reservation-confirmation').classList.remove('is-hidden');">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="customer-reservation-confirmation" class="card is-hidden">
+                                <div class="card-content">
+                                    <h4>Confirm the following information is correct before continuing.</h4>
+                                    <div class="columns">
+                                        <div class="column is-6">
+                                            <p>Customer Information</p>
+                                            <div class="field">
+                                                <label class="label">First Name</label>
+                                                <input class="input" type="text" value="Johnathan" readonly />
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Last Name</label>
+                                                <input class="input" type="text" value="Smith" readonly />
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Driver's License #</label>
+                                                <input class="input" type="text" value="X1423BG831" readonly />
+                                            </div>
+                                        </div>
+                                        <div class="column is-6">
+                                            <p>Billing Information</p>
+                                            <div class="field">
+                                                <label class="label">Address Line 1</label>
+                                                <input class="input" type="text" value="1234 Test Ln" readonly />
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Address Line 2</label>
+                                                <input class="input" type="text" value="Apt 13" readonly />
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">City</label>
+                                                <input class="input" type="text" value="Kansas City" readonly />
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">State</label>
+                                                <input class="input" type="text" value="MO" readonly />
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Zip Code</label>
+                                                <input class="input" type="text" value="64112" readonly />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="has-text-right">
+                                        <button class="button is-medium is-success" type="button"
+                                        onclick="document.getElementById('customer-reservation-form').innerHTML = 'Reservation confirmed! <a href=\'./index.html\'>Back to home page</a>'">
+                                            Confirm Reservation
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="App-foot footer">
+        <div class="content has-text-centered">
+            <p class="is-size-7">
+                &copy; 2019 Thundercats Car Rentals
+                <br/>
+                All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
